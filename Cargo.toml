@@ -1,0 +1,2 @@
+[workspace]
+members = ["unix-print", "no-std-test"]

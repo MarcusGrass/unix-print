@@ -1,0 +1,18 @@
+name: "CI"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request: {}
+
+jobs:
+  validate:
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, macos-latest ]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Tests
+        run: cargo deny --all-features --locked check
