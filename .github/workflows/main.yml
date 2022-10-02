@@ -15,4 +15,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Tests
-        run: cargo deny --all-features --locked check
+        run: /bin/sh test.sh
