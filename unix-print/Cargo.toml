@@ -8,7 +8,7 @@ description = "A no_std and no_libc stdout printing library"
 documentation = "https://docs.rs/unix-print"
 homepage = "https://github.com/MarcusGrass/unix-print"
 repository = "https://github.com/MarcusGrass/unix-print"
-readme = "Readme.md"
+readme = "../Readme.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
