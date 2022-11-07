@@ -1,6 +1,10 @@
 # Unix print
 A `no_std`, `no_libc` library that allows using Rust's standard syscall macros 
 to output to stdout or stderr.  
+
+Does no buffering or locking which will exhibit poor performance under heavy load, and strange ordering on 
+multithreading.  
+
 *Should work on posix compliant OSes but is only tested on linux
 
 ## Examples
