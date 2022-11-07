@@ -1,3 +1,4 @@
+//! A no_std, no_libc stdout/stderr printer with a similar interface as Rust std's (e)print(ln)-macros
 #![no_std]
 #![warn(clippy::all)]
 #![warn(clippy::pedantic)]
